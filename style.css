@@ -1,0 +1,384 @@
+/* basic  */
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #050816;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    min-height: 90px;
+
+    background-color: #0b1026;
+    border-bottom: 1px solid #252b4a;
+
+    display: flex;
+    align-items: center;
+
+    padding: 15px 40px;
+    gap: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+#logo {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+}
+
+/* navigation */
+#navigation {
+    display: flex;
+    gap: 25px;
+
+    margin-left: auto;
+}
+
+#navigation a {
+    color: white;
+    text-decoration: none;
+
+    border-radius: 9px;
+    background-color: #131e45;
+
+    padding: 8px 12px;
+
+    transition: 0.3s;
+}
+
+#navigation a:hover {
+    color: #7dd3fc;
+}
+
+/* main  */
+main{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+
+    min-height: 90px;
+}
+
+.sidebar{
+    grid-column: 1;
+
+    background-color: #080d20;
+
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    border-right: 1px solid #252b4a;
+}
+
+.sidebar a{
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 16px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.sidebar a:hover{
+    background-color: #161d3a;
+    color: #7dd3fc;
+}
+
+/* all content section  */
+main > section{
+    grid-column: 2;
+
+    padding: 30px 40px;
+}
+
+/* hero  */
+.hero{
+    margin: 30px;
+    background-color: #0b1026;
+
+   border-radius: 15px;
+   border: 1px solid #252b4a;
+
+   padding: 60px 50px;
+}
+
+.hero h1{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero p{
+    font-size: 20px;
+    color: #cbd5e1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h3{
+    font-size: 20px;
+    color: #7dd3fc;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero a{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    color: white;
+    text-decoration: none;
+
+    border-radius: 12px;
+    background-color: #131e45;
+
+    padding: 12px 16px;
+
+    transition: 0.3s;
+}
+
+.hero a:hover{
+    background-color: #161d3a;
+     background-color: #1d4ed8;
+}
+
+/* statistics*/
+.statistics{
+    padding: 20px 50px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.statistics h2 {
+    grid-column: 1 / -1;
+
+    font-size: 40px;
+}
+
+/* start-card */
+
+.stat-card {
+    background-color: #0d1430;
+    border: 1px solid #252b4a;
+    border-radius: 15px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+}
+
+.stat-card h3 {
+    font-size: 35px;
+    color: #60a5fa;
+}
+
+.stat-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    color: #94a3b8;
+}
+
+/* featured-planet */
+.featured-planet {
+    padding: 20px 50px;
+}
+
+.featured-planet h2 {
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+/* planet table */
+.planet-table {
+    width: 100%;
+
+    border-collapse: collapse;
+    background-color: #0d1430;
+}
+
+.planet-table th, .planet-table td {
+    padding: 12px 15px;
+
+     border: 1px solid #303653;
+    text-align: justify;
+}
+
+.planet-table th {
+    background-color: #172044;
+    color: #7dd3fc;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.planet-table tr:hover {
+    background-color: #141c39;
+}
+
+/* mission  */
+.missions {
+    padding: 20px 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.missions h2 {
+    grid-column: 1 / -1;
+
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+/* mission card */
+.mission-card {
+    background-color: #0d1430;
+
+    border: 1px solid #252b4a;
+    border-radius: 15px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #3b82f6;
+}
+
+.mission-card h3 {
+    font-size: 30px;
+    color: #60a5fa;
+}
+
+.mission-card p {
+    color: #94a3b8;
+}
+
+.mission-card strong {
+    color: #7dd3fc;
+}
+
+.mission-card h4 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* footer  */
+footer{
+    background-color: #0b1026;
+    padding: 50px;
+    border-top: 1px solid #252b4a;
+
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+footer h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+footer p{
+    color: #94a3b8;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer nav a{
+    color: white;
+    text-decoration: none;
+}
+
+footer nav a:hover{
+    color: #7dd3fc;
+}
+
+/* now other device */
+/* mobile and tablet devices */  
+@media (max-width: 768px) {
+
+
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo{
+        width: 45px;
+        height: 45px;
+    }
+    
+    .sidebar{
+        grid-column: 1 / -1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar a{
+        padding: 8px 12px;
+    }
+
+    main > section{
+        grid-column: 1 / -1;
+    }
+
+    .statistics{
+        grid-template-columns: 1fr;
+    }
+
+    .missions{
+        grid-template-columns: 1fr;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+    }
+}   
